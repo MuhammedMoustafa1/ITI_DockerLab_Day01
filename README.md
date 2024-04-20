@@ -11,15 +11,21 @@ docker run hello-world
 ```
 #### 2. Check Container Status and Explain
 ```bash
+docker ps -a
+docker ps only did not show hello-world image
 ```
 #### 3. Start the Stopped Container
 ```bash
+docker start ebdf48827469 
+
 ```
 #### 4. Remove the Container
 ```bash
+docker rm ebdf48827469 
 ```
 #### 5. Remove the Image
 ```bash
+docker rmi hello-world
 ```
 ---
 
