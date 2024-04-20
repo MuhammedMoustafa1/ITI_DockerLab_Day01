@@ -93,6 +93,8 @@ docker build -t nginx-mohamed .
 #### 4. Test the Container, open your browser and navigate to http://localhost:8088 to check if everything is okay
 ```bash
 http://localhost:8088/ my name appeared in this url
-```![Capturedd](https://github.com/MuhammedMoustafa1/ITI_DockerLab_Day01/assets/156408067/cf6bbf3d-94e2-4053-8205-578409c18f59)
+![Capturedd](https://github.com/MuhammedMoustafa1/ITI_DockerLab_Day01/assets/156408067/c0e9b982-5675-4375-ad87-f3ec17213a03)
+
+```
 
 
