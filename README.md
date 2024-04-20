@@ -36,21 +36,33 @@ Run an Ubuntu container in interactive mode, create a file inside it, and manage
 ### Steps
 #### 1. Run Ubuntu Container in Interactive Mode
 ```bash
+docker run -it ubuntu
+
 ```
 #### 2. Create a File inside the Container
 ```bash
+touch hello-docker
+
 ```
 #### 3. Stop and Remove the Container
 ```bash
+exit
+docker stop f58aec1b182b
+docker rm f58aec1b182b
 ```
 #### 4. Check File Status
 ```bash
+docker ps -a
+File is removed
 ```
 #### 5. What happened to hello-docker file?
 ```bash
+docker ps -a
+file is deleted with container
 ```
 #### 6. Remove All Stopped Containers
 ```bash
+docker rm f58aec1b182b
 ```
 #### 7. Bonus: Remove All Containers in One Command
 ```bash
