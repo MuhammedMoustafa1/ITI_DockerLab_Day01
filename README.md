@@ -95,6 +95,30 @@ docker build -t nginx-mohamed .
 http://localhost:8088/ my name appeared in this url
 ```
 
+# ITI-Docker-Lab 2 🐋
+
+## Task 1: Run a container using nginx image, and mount a directory from your host into the Docker container. 
+### example: /home/samy/nginx:/home/nginx (bind mount)
+
+#### 1-create a directory and file iti.txt in it 
+```bash
+mkdir nginx_bindMount
+cd nginx_bindMount/
+touch iti.txt
+```
+#### 2- Run container using nginx image
+```bash
+docker run -d --name nginx_bindMount -v /root/nginx_bindMount:/usr/share/nginx/html nginx-talaat
+```
+
+#### 3-check if the file is mounted on the machine
+```bash
+docker exec -it nginx_bindMount bash
+cd /usr/share/nginx/html/
+ls
+we find iti.txt present indicating that it is mounted into the container
+```
+
 ---
 
 ## Task 2
@@ -159,6 +183,9 @@ the ping is successful because the two containers are in the same networks.
 #### 3-The file or directory is referenced by its full path on the host machine.
 #### 4-It is created on demand if it does not yet exist.
 #### 5-You can’t use Docker CLI commands to directly manage bind mounts.
+
+
+
 
 
 
